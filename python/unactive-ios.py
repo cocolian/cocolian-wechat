@@ -48,8 +48,8 @@ class NameComparator:
 
 class FrequenceExporter : 
     def __init__(self, room_name):       
-        ## chat_path = u'D:\iphone\微信消息记录-jigsaw-payment'
-        self.room = wechat.Room(room_name)        
+        chat_path = u'D:/iphone/李雄峰的 iPhone/微信消息记录/'
+        self.room = wechat.Room(room_name, chat_path)        
         self.target_path = 'D:/cocolian/cocolian-static/data/frequence/' + room_name + '-' + time.strftime("%Y%m%d", time.localtime()) + ".csv"        
         self.freq ={}
         self.last = {}

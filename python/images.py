@@ -36,8 +36,11 @@ for cur_foldername in os.listdir(unpath):
     for cur_filename in os.listdir(cur_folder): 
         if cur_filename.endswith(".png"): 
             file_name = time.strftime("%Y%m%d_%H%M%S", time.strptime(cur_filename[:14], "%Y%m%d%H%M%S"))+ ".png" 
+            file_folder = os.path.join(target_folder, file_name[:6])
+            if not os.path.exists(file_folder) :
+                os.mkdir(file_folder)
             cur_path = os.path.join(cur_folder, cur_filename)
-            target_path = os.path.join(target_folder, file_name)
+            target_path = os.path.join(file_folder, file_name)
             if not os.path.exists(target_path) or os.path.getsize(cur_path)>os.path.getsize(target_path) :
                 shutil.copyfile(cur_path, target_path)              
                 print(cur_path +' --> ' + target_path)

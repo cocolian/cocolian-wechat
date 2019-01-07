@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x #echo on
+
 today=`date +"%Y-%m-%d"`
 cd  /cygdrive/d/cocolian/cocolian-wechat/python
 python source.py

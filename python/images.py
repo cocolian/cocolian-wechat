@@ -13,8 +13,8 @@ import codecs
 
 ## 导出路径
 # root_path = u'D:/iphone/李雄峰的 iPhone/微信消息记录/'
-root_path = u'D:/iphone/微信消息记录-jigsaw-payment/'
-target_folder = u'D:/cocolian/cocolian-static/img/'
+root_path = u'~/iphone/微信消息记录-jigsaw-payment/'
+target_folder = u'~/cocolian/cocolian-static/img/'
 
 
 ## 寻找最近日期的xls文件

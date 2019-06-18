@@ -16,7 +16,7 @@ class Exporter :
     
     ## 计算目标文件路径
     def targetPath(self, date) : 
-        return 'D:/cocolian/cocolian-docs/source/'+ self.target_folder+'/_posts/'+ date + '-chat.markdown'
+        return '~/cocolian/cocolian-docs/source/'+ self.target_folder+'/_posts/'+ date + '-chat.markdown'
         
 
     def export(self, exp_days, to_date):

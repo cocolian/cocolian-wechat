@@ -7,28 +7,28 @@ cd  /cygdrive/d/cocolian/cocolian-wechat/python
 python source.py
 python images.py
 echo  '========================'
-cd /cygdrive/d/cocolian/cocolian-docs/
+cd ~/cocolian/cocolian-docs/
 git pull
 git add -A
 echo 'update sources to '$today
 git commit -m 'update sources to '$today 
 git push origin master
 echo  '========================'
-cd /cygdrive/d/cocolian/cocolian-static
+cd ~/cocolian/cocolian-static
 git pull
 git add -A
 echo  'update images to '$today
 git commit -m 'update images to '$today
 git push origin master
 echo  '========================'
-cd /cygdrive/d/cocolian/cocolian-wechat
+cd ~/cocolian/cocolian-wechat
 git pull
 git add -A
 echo  'update scripts to '$today
 git commit -m 'update scripts to '$today
 git push origin master
 echo  '========================'
-cd /cygdrive/d/cocolian/cocolian-resources
+cd ~/cocolian/cocolian-resources
 git pull
 git add -A
 echo  'update resources to '$today
